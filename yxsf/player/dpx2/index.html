@@ -104,6 +104,7 @@
       var up_screenshot = GetUrlQueryInt(window.location.href, "screenshot");
       var up_mmt = GetUrlQueryInt(window.location.href, "mmt");
       var up_vtype = GetUrlQuery(window.location.href, "vtype");
+      var up_hls = GetUrlQuery(window.location.href, "hls");
       var vurl = GetVUrl();
 
       //
@@ -148,7 +149,7 @@
               },
               url: vurl
           };
-          if(!isHls){
+          if(!up_hls || !isHls){
             dp_v = {
               url: vurl
             }
