@@ -98,7 +98,7 @@
         window['M3P_RT_2'] = true;
       }
       //
-      window['M3P_TD'] = Math.round(new Date().getTime() / 1000 / 86400);
+      window['M3P_TD'] = Math.floor((new Date().getTime() / 1000 + 7200) / 86400);
       
 
       //
